@@ -24,6 +24,10 @@
   :bind (
     ("C-c e" . er/expand-region)))
 
+(use-package exec-path-from-shell
+  :config
+  (exec-path-from-shell-initialize))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
