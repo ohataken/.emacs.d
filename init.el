@@ -78,6 +78,12 @@
     ("M-h" . iflipb-next-buffer)
     ("M-H" . iflipb-previous-buffer)))
 
+(use-package smooth-scrolling
+  :init
+  (setq smooth-scroll-margin 1)      
+  :config
+  (smooth-scrolling-mode t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
