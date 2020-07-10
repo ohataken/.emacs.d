@@ -32,6 +32,10 @@
   :config
   (global-flycheck-mode))
 
+(use-package pallet
+  :config
+  (pallet-mode t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
