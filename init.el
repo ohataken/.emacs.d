@@ -36,6 +36,14 @@
   :config
   (pallet-mode t))
 
+(use-package projectile
+  :init
+  (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld"))
+  :bind (
+    ("C-x C-f" . projectile-find-file))
+  :config
+  (projectile-mode))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
