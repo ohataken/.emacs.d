@@ -28,6 +28,10 @@
   :config
   (exec-path-from-shell-initialize))
 
+(use-package flycheck
+  :config
+  (global-flycheck-mode))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
