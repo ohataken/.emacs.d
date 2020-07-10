@@ -14,6 +14,12 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+(use-package dired-subtree
+  :init
+  (add-hook 'dired-mode-hook 'dired-hide-details-mode)
+  :bind (:map dired-mode-map
+    ("i" . dired-subtree-toggle)))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
