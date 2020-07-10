@@ -61,6 +61,10 @@
   :config
   (global-company-mode t))
 
+(use-package dired-subtree
+  :init
+  (setq dired-subtree-use-background nil))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
