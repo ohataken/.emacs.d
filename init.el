@@ -11,6 +11,9 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(straight-use-package 'use-package)
+(setq straight-use-package-by-default t)
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
