@@ -86,6 +86,10 @@
 
 (use-package magit)
 
+(use-package counsel
+  :config
+  (counsel-mode 1))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
