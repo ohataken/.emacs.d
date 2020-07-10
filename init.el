@@ -71,6 +71,13 @@
   :config
   (golden-ratio-mode t))
 
+(use-package iflipb
+  :init
+  (setq iflipb-ignore-buffers nil)
+  :bind (
+    ("M-h" . iflipb-next-buffer)
+    ("M-H" . iflipb-previous-buffer)))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
