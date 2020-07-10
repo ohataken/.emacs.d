@@ -65,6 +65,12 @@
   :init
   (setq dired-subtree-use-background nil))
 
+(use-package golden-ratio
+  :init
+  (setq golden-ratio-auto-scale t)
+  :config
+  (golden-ratio-mode t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
