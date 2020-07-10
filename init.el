@@ -54,6 +54,13 @@
   :config
   (smartparens-global-mode t))
 
+(use-package company
+  :init
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1)
+  :config
+  (global-company-mode t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
