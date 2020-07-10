@@ -84,6 +84,8 @@
   :config
   (smooth-scrolling-mode t))
 
+(use-package magit)
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
