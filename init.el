@@ -88,7 +88,9 @@
 
 (use-package counsel
   :init
-  (counsel-mode 1))
+  (counsel-mode 1)
+  :bind (
+    "C-x b" . counsel-switch-buffer))
 
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
