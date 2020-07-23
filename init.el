@@ -107,6 +107,7 @@
 (menu-bar-mode -1)
 (setq custom-file (locate-user-emacs-file "tmp/custom.el"))
 (setq suggest-key-bindings t)
+(setq js-indent-level 2)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq-default truncate-lines t)
