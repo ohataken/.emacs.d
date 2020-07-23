@@ -92,6 +92,10 @@
   :bind (
     "C-x b" . counsel-switch-buffer))
 
+(use-package leuven-theme
+  :config
+  (load-theme 'leuven t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
