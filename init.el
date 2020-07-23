@@ -87,7 +87,7 @@
 (use-package magit)
 
 (use-package counsel
-  :config
+  :init
   (counsel-mode 1))
 
 (setq create-lockfiles nil)
