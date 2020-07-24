@@ -92,9 +92,9 @@
   :bind (
     "C-x b" . counsel-switch-buffer))
 
-(use-package leuven-theme
+(use-package srcery-theme
   :config
-  (load-theme 'leuven t))
+  (load-theme 'srcery t))
 
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
