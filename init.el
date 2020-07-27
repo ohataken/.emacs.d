@@ -93,6 +93,12 @@
   :bind (
     "C-x b" . counsel-switch-buffer))
 
+(use-package ivy-prescient
+  :config
+  (custom-set-variables '(prescient-save-file (expand-file-name "tmp/prescient-save.el" user-emacs-directory)))
+  (ivy-prescient-mode t)
+  (prescient-persist-mode t))
+
 (use-package smart-mode-line
   :config
   (setq sml/theme 'light)
