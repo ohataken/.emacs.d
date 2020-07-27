@@ -38,11 +38,12 @@
 
 (use-package projectile
   :init
-  (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld"))
-  :bind (
-    ("C-x C-f" . projectile-find-file))
+  (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
+
+(use-package counsel-projectile
   :config
-  (projectile-mode))
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (counsel-projectile-mode t))
 
 (use-package saveplace
   :init
