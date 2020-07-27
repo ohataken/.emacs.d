@@ -81,7 +81,7 @@
 
 (use-package smooth-scrolling
   :init
-  (setq smooth-scroll-margin 1)      
+  (setq smooth-scroll-margin 1)
   :config
   (smooth-scrolling-mode t))
 
