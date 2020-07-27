@@ -32,10 +32,6 @@
   :config
   (global-flycheck-mode))
 
-(use-package pallet
-  :config
-  (pallet-mode t))
-
 (use-package projectile
   :init
   (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
