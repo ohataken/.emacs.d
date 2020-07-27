@@ -109,6 +109,10 @@
   :config
   (load-theme 'srcery t))
 
+(use-package git-gutter
+  :config
+  (global-git-gutter-mode +1))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
