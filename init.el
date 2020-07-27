@@ -93,6 +93,12 @@
   :bind (
     "C-x b" . counsel-switch-buffer))
 
+(use-package smart-mode-line
+  :config
+  (setq sml/theme 'light)
+  (setq sml/no-confirm-load-theme t)
+  (sml/setup))
+
 (use-package srcery-theme
   :config
   (load-theme 'srcery t))
