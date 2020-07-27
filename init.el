@@ -95,6 +95,11 @@
   (ivy-prescient-mode t)
   (prescient-persist-mode t))
 
+(use-package ivy-rich
+  :config
+  (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
+  (ivy-rich-mode 1))
+
 (use-package smart-mode-line
   :config
   (setq sml/theme 'respectful)
