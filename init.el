@@ -97,7 +97,7 @@
 
 (use-package smart-mode-line
   :config
-  (setq sml/theme 'light)
+  (setq sml/theme 'respectful)
   (setq sml/no-confirm-load-theme t)
   (sml/setup))
 
