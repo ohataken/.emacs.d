@@ -91,7 +91,7 @@
 
 (use-package ivy-prescient
   :config
-  (custom-set-variables '(prescient-save-file (expand-file-name "tmp/prescient-save.el" user-emacs-directory)))
+  (custom-set-variables '(prescient-save-file (locate-user-emacs-file "tmp/prescient-save.el")))
   (ivy-prescient-mode t)
   (prescient-persist-mode t))
 
