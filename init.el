@@ -70,6 +70,10 @@
 
 (use-package magit)
 
+(use-package swiper
+  :config
+  (global-set-key "\C-s" 'swiper))
+
 (use-package counsel
   :init
   (counsel-mode 1)
