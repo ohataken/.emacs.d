@@ -41,12 +41,6 @@
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (counsel-projectile-mode t))
 
-(use-package saveplace
-  :init
-  (setq save-place-file (locate-user-emacs-file "tmp/places"))
-  :config
-  (save-place-mode 1))
-
 (use-package smartparens
   :config
   (smartparens-global-mode t))
@@ -116,11 +110,13 @@
 (setq debug-on-error t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (menu-bar-mode -1)
+(save-place-mode 1)
 (recentf-mode)
 (setq recentf-auto-cleanup 'never)
 (setq custom-file (locate-user-emacs-file "tmp/custom.el"))
 (setq recentf-save-file (locate-user-emacs-file "tmp/recentf"))
 (setq transient-history-file (locate-user-emacs-file "tmp/transient-history.el"))
+(setq save-place-file (locate-user-emacs-file "tmp/places"))
 (setq suggest-key-bindings t)
 (setq js-indent-level 2)
 (setq-default indent-tabs-mode nil)
