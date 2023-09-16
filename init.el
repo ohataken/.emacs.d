@@ -16,6 +16,7 @@
 
 (use-package dired-subtree
   :init
+  (setq dired-subtree-use-background nil)
   (add-hook 'dired-mode-hook 'dired-hide-details-mode)
   :bind (:map dired-mode-map
     ("i" . dired-subtree-toggle)))
@@ -51,10 +52,6 @@
   (setq company-minimum-prefix-length 1)
   :config
   (global-company-mode t))
-
-(use-package dired-subtree
-  :init
-  (setq dired-subtree-use-background nil))
 
 (use-package golden-ratio
   :init
