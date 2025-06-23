@@ -99,9 +99,9 @@
   (setq sml/no-confirm-load-theme t)
   (sml/setup))
 
-(use-package srcery-theme
+(use-package dracula-theme
   :config
-  (load-theme 'srcery t))
+  (load-theme 'dracula t))
 
 (use-package git-gutter
   :config
