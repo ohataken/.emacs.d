@@ -14,12 +14,6 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-(use-package dired-subtree
-  :init
-  (add-hook 'dired-mode-hook 'dired-hide-details-mode)
-  :bind (:map dired-mode-map
-    ("i" . dired-subtree-toggle)))
-
 (use-package expand-region
   :bind (
     ("C-c e" . er/expand-region)))
@@ -51,10 +45,6 @@
   (setq company-minimum-prefix-length 1)
   :config
   (global-company-mode t))
-
-(use-package dired-subtree
-  :init
-  (setq dired-subtree-use-background nil))
 
 (use-package smooth-scrolling
   :init
