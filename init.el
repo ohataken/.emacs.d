@@ -126,3 +126,4 @@
 (setq-default inhibit-startup-screen t)
 (setq-default inhibit-splash-screen t)
 (customize-set-variable 'scroll-bar-mode nil)
+(customize-set-variable 'horizontal-scroll-bar-mode nil)
