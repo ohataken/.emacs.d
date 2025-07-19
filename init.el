@@ -56,12 +56,6 @@
   :init
   (setq dired-subtree-use-background nil))
 
-(use-package golden-ratio
-  :init
-  (setq golden-ratio-auto-scale t)
-  :config
-  (golden-ratio-mode t))
-
 (use-package smooth-scrolling
   :init
   (setq smooth-scroll-margin 1)
