@@ -19,6 +19,9 @@
   :config
   (setq vterm-shell "/bin/bash"))
 
+(use-package multi-vterm
+  :ensure t)
+
 (use-package expand-region
   :bind (
     ("C-c e" . er/expand-region)))
