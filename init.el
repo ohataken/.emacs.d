@@ -64,6 +64,8 @@
 (use-package counsel
   :init
   (counsel-mode 1)
+  :config
+  (setq counsel-projectile-preview-buffers t)
   :bind (
     "C-x b" . counsel-switch-buffer))
 
