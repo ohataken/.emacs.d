@@ -14,6 +14,11 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+(use-package vterm
+  :ensure t
+  :config
+  (setq vterm-shell "/bin/bash"))
+
 (use-package expand-region
   :bind (
     ("C-c e" . er/expand-region)))
