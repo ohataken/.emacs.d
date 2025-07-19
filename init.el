@@ -115,6 +115,7 @@
 (setq confirm-kill-emacs 'y-or-n-p)
 (setq debug-on-error t)
 (fset 'yes-or-no-p 'y-or-n-p)
+(tool-bar-mode -1)
 (menu-bar-mode -1)
 (save-place-mode 1)
 (recentf-mode)
