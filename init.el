@@ -44,13 +44,6 @@
   :config
   (smartparens-global-mode t))
 
-(use-package company
-  :init
-  (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 1)
-  :config
-  (global-company-mode t))
-
 (use-package smooth-scrolling
   :init
   (setq smooth-scroll-margin 1)
