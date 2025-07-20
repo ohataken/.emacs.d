@@ -26,10 +26,6 @@
   :config
   (exec-path-from-shell-initialize))
 
-(use-package flycheck
-  :config
-  (global-flycheck-mode))
-
 (use-package projectile
   :init
   (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
