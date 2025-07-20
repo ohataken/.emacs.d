@@ -22,10 +22,6 @@
 (use-package multi-vterm
   :ensure t)
 
-(use-package expand-region
-  :bind (
-    ("C-c e" . er/expand-region)))
-
 (use-package exec-path-from-shell
   :config
   (exec-path-from-shell-initialize))
