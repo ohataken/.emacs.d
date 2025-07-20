@@ -22,10 +22,6 @@
 (use-package multi-vterm
   :ensure t)
 
-(use-package exec-path-from-shell
-  :config
-  (exec-path-from-shell-initialize))
-
 (use-package projectile
   :init
   (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
