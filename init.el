@@ -83,6 +83,10 @@
   :config
   (global-git-gutter-mode +1))
 
+(use-package dirvish
+  :config
+  (dirvish-override-dired-mode t))
+
 (setq create-lockfiles nil)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
