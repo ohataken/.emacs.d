@@ -17,7 +17,7 @@
 (use-package vterm
   :ensure t
   :config
-  (setq vterm-shell "/bin/bash"))
+  (setq vterm-shell "/bin/zsh"))
 
 (use-package multi-vterm
   :ensure t)
