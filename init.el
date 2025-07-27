@@ -23,8 +23,8 @@
   :ensure t)
 
 (use-package projectile
-  :init
-  (setq projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
+  :custom
+  (projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
 
 (use-package counsel-projectile
   :config
