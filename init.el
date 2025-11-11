@@ -19,9 +19,6 @@
   :config
   (setq vterm-shell "/bin/zsh"))
 
-(use-package multi-vterm
-  :ensure t)
-
 (use-package projectile
   :config
   (projectile-known-projects)
