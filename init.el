@@ -14,11 +14,6 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-(use-package vterm
-  :ensure t
-  :config
-  (setq vterm-shell "/bin/zsh"))
-
 (use-package projectile
   :config
   (projectile-known-projects)
