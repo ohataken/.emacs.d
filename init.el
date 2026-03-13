@@ -27,6 +27,10 @@
   :config
   (marginalia-mode t))
 
+(use-package consult
+  :bind (("C-s" . consult-line)
+         ("C-x b" . consult-buffer)))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
