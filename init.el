@@ -23,6 +23,10 @@
   (completion-styles '(orderless basic))
   (completion-category-overrides '((file (styles partial-completion)))))
 
+(use-package marginalia
+  :config
+  (marginalia-mode t))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
