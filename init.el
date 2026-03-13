@@ -44,10 +44,6 @@
 (use-package embark-consult
   :after (embark consult))
 
-(use-package smartparens
-  :config
-  (smartparens-global-mode t))
-
 (use-package smooth-scrolling
   :init
   (setq smooth-scroll-margin 1)
