@@ -14,16 +14,6 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-(use-package counsel-projectile
-  :config
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-  (counsel-projectile-mode t)
-  :custom
-  (counsel-projectile-switch-project-action
-   '(1
-     ("D" counsel-projectile-switch-project-action-dired
-      "open project in dired"))))
-
 (use-package smartparens
   :config
   (smartparens-global-mode t))
@@ -48,7 +38,6 @@
   :init
   (counsel-mode 1)
   :config
-  (setq counsel-projectile-preview-buffers t)
   (setq counsel-switch-buffer-preview-virtual-buffers t)
   :bind (
     "C-x b" . counsel-switch-buffer))
