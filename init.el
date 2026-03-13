@@ -34,6 +34,9 @@
 (use-package embark
   :bind ("C-." . embark-act))
 
+(use-package embark-consult
+  :after (embark consult))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
