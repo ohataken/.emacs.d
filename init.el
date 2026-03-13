@@ -18,6 +18,11 @@
   :config
   (vertico-mode t))
 
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles partial-completion)))))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
