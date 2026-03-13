@@ -31,6 +31,9 @@
   :bind (("C-s" . consult-line)
          ("C-x b" . consult-buffer)))
 
+(use-package embark
+  :bind ("C-." . embark-act))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
