@@ -34,14 +34,6 @@
   :config
   (global-set-key "\C-s" 'swiper))
 
-(use-package counsel
-  :init
-  (counsel-mode 1)
-  :config
-  (setq counsel-switch-buffer-preview-virtual-buffers t)
-  :bind (
-    "C-x b" . counsel-switch-buffer))
-
 (use-package smart-mode-line
   :config
   (setq sml/theme 'respectful)
