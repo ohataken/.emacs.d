@@ -25,6 +25,8 @@
 
 (use-package vertico-prescient
   :after vertico
+  :config
+  (custom-set-variables '(prescient-save-file (locate-user-emacs-file "tmp/prescient-save.el")))
   (vertico-prescient-mode t)
   (prescient-persist-mode t))
 
