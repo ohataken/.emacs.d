@@ -28,10 +28,6 @@
   :init
   (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
-(use-package swiper
-  :config
-  (global-set-key "\C-s" 'swiper))
-
 (use-package smart-mode-line
   :config
   (setq sml/theme 'respectful)
