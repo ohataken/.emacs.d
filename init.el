@@ -93,6 +93,7 @@
 (setq recentf-save-file (locate-user-emacs-file "tmp/recentf"))
 (setq transient-history-file (locate-user-emacs-file "tmp/transient-history.el"))
 (setq save-place-file (locate-user-emacs-file "tmp/places"))
+(setq project-list-file (locate-user-emacs-file "tmp/projects"))
 (setq suggest-key-bindings t)
 (setq js-indent-level 2)
 (setq-default indent-tabs-mode nil)
