@@ -23,6 +23,11 @@
   (completion-styles '(orderless basic))
   (completion-category-overrides '((file (styles partial-completion)))))
 
+(use-package vertico-prescient
+  :after vertico
+  (vertico-prescient-mode t)
+  (prescient-persist-mode t))
+
 (use-package marginalia
   :config
   (marginalia-mode t))
