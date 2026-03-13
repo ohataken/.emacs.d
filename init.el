@@ -14,12 +14,6 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-(use-package projectile
-  :config
-  (projectile-known-projects)
-  :custom
-  (projectile-known-projects-file (locate-user-emacs-file "tmp/projectile-bookmarks.eld")))
-
 (use-package counsel-projectile
   :config
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
