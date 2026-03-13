@@ -14,6 +14,10 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+(use-package vertico
+  :config
+  (vertico-mode t))
+
 (use-package smartparens
   :config
   (smartparens-global-mode t))
