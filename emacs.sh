@@ -1,2 +1,2 @@
-export EDITOR="emacsclient -nw -a ''"
-alias e="emacsclient -nw -a ''"
+export EDITOR="emacsclient --no-window-system -a ''"
+alias e="emacsclient --no-window-system -a ''"
