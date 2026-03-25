@@ -38,6 +38,8 @@
   :bind (("C-s" . consult-line)
          ("C-x b" . consult-buffer)))
 
+(use-package consult-ghq)
+
 (use-package embark
   :bind ("C-." . embark-act))
 
